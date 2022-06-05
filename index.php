@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h2>Explorez les cours de la technique en intégration multimédia</h2>
+<h2 class='article_cours_entete'>Explorez les cours de la technique en intégration multimédia:</h2>
 
 <?php if( have_posts() ) : ?>
     <section class='article_cours'>

@@ -466,6 +466,7 @@ table {
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 
 .article_cours > article {
@@ -477,16 +478,21 @@ table {
 .article_cours > article {
   background-color: #2a2a4b;
   color: white;
-  min-width: 30ch;
-  max-width: 30ch;
+  min-width: 27.5ch;
+  max-width: 27.5ch;
   padding: 10px;
   min-height: 150px;
   border-radius: 5px;
 }
 
 .article_cours > article {
-  margin-inline-start: 20px;
-  margin-block-start: 20px;
+  margin-inline-end: 20px;
+}
+
+.article_cours_entete {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Links
