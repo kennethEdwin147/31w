@@ -1,11 +1,14 @@
 <?php get_header(); ?>
-<h1>Mon premier modèle wordpress</h1>
+<h2>Explorez les cours de la technique en intégration multimédia</h2>
 
-<?php 
-if( have_posts() ) :
-    while( have_posts() ): the_post(); ?>
-    <?= the_title(); ?>
-    <p><?php endwhile;?></p>
+<?php if( have_posts() ) : ?>
+    <section class='article_cours'>
+    <?php while( have_posts() ): the_post(); ?>
+      <article>
+        <p><?= the_title(); ?></p>
+      </article>
+   <?php endwhile;?>
+   </section>
 <?php endif; ?>
 
 <?php get_footer(); ?>

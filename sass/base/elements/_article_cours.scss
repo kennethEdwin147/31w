@@ -1,0 +1,31 @@
+.article_cours {
+    display: flex;
+    max-width: 1500px;
+    overflow-x: scroll;
+    font-family: $font__main;
+    padding-bottom: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article_cours>article {
+    flex-shrink: 0;
+    display: flex;
+    align-items:flex-end;
+}
+
+.article_cours>article {
+    background-color:rgb(42, 42, 75);
+    color: white;
+    min-width: 30ch;
+    max-width: 30ch;
+    padding: 10px;
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.article_cours>article{
+    margin-inline-start: 20px;
+    margin-block-start: 20px;
+}
