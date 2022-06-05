@@ -2,6 +2,6 @@
 </footer>
 <?php wp_footer(); ?>
 </section>
-<!-- Fin du site -->
+<!-- Fin de site -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 ## Premier thème et plugin Wordpress
 ### Contient 5 fichiers
 
-> Le thème contient 5 fichiers :
+> Le thème contient 5 fichiers:
 index.php
 style.css
 functions.php
