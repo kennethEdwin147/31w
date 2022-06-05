@@ -1,14 +1,20 @@
 # Exercice - 1
 ## Premier thème et plugin Wordpress
-### Contient 5 fichiers
+### Contient 6 fichiers
+### Contient 1 dossier
 
-> Le thème contient 5 fichiers:
+> Le thème contient 6 fichiers:
 index.php
 style.css
 functions.php
 header.php
 footer.php
 readme.md 
+screenshot.png
+
+> Le thème contient 1 dossier:
+sass
+
 
 <!-- lien vers gitgub page -->
 []()

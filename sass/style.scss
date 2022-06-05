@@ -23,6 +23,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+#variable
+	- couleur
+	- police
+	- dimension
+
 # Generic
 	- Normalize
 	- Box sizing
@@ -32,7 +37,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Links
 	- Forms
 ## Layouts
-# Components
+# Composent
 	- Navigation
 	- Posts and pages
 	- Comments
@@ -48,8 +53,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
+
+/* variable 
+--------------------------------------------- */
+@import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
 
 /*--------------------------------------------------------------
 # Generic
