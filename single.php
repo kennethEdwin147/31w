@@ -12,9 +12,11 @@
         <?php 
             $titre = get_the_title();
             $sigle = substr($titre,0,8);
-            echo $sigle;
-            $heure = substr( $titre ,-6);
+            $heure = substr($titre ,-6);
         ?>
+        <p>Sigle du cours: <?= $sigle ?></p>
+        <p>Nombre d'heures: <?= $heure ?></p>
+
 
       </article>
    <?php endwhile;?>

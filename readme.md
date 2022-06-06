@@ -3,6 +3,8 @@
 ### Contient 6 fichiers
 ### Contient 1 dossier
 
+<!-- [github-page](https://kennethEdwin147.github.io/)
+ -->
 > Le thème contient 6 fichiers:
 index.php
 style.css
