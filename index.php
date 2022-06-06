@@ -11,8 +11,8 @@
         <p><?= wp_trim_words(get_the_content(), 30) ?></p>
 
         <?php 
-        $lien = "<a href=' ". get_permalink(). " '>Voir le cours</a>"; 
-        echo $lien;
+         $lien = "<a href=' ". get_permalink(). " '>". substr(get_the_title(),0,8) ."</a>"; 
+         echo $lien;
         ?>
 
 
