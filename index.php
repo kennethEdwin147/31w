@@ -5,7 +5,17 @@
     <section class='article_cours'>
     <?php while( have_posts() ): the_post(); ?>
       <article>
-        <p><?= the_title(); ?></p>
+        <header>
+          <p><?= the_title(); ?></p>
+        </header>
+        <p><?= wp_trim_words(get_the_content(), 30) ?></p>
+
+        <?php 
+        $lien = "<a href=' ". get_permalink(). " '>Voir le cours</a>"; 
+        echo $lien;
+        ?>
+
+
       </article>
    <?php endwhile;?>
    </section>

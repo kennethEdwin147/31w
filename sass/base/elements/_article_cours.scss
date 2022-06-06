@@ -1,7 +1,8 @@
 .article_cours {
     display: flex;
     max-width: $max_width_section;
-    overflow-x: scroll;
+
+    flex-wrap: wrap;
     font-family: $font__main;
     padding-bottom: 20px;
 
@@ -10,24 +11,31 @@
     margin-top: 30px;
 }
 
-.article_cours>article {
-    flex-shrink: 0;
-    display: flex;
-    align-items:flex-end;
-}
+
 
 .article_cours>article {
-    background-color: $color_article_cours;
-    color: $color_article_cours_p;
-    min-width: 27.5ch;
-    max-width: 27.5ch;
+    min-width: 32ch;
+    max-width: 32ch;
     padding: 10px;
-    min-height: 150px;
     border-radius: 5px;
 }
 
+.article_cours>article>header>p {
+    height: 100%;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.article_cours>article>header {
+    background-color: $color_article_cours;
+    color: $color_article_cours_p;
+    padding: 10px;
+    min-height: 100px;
+}
+
 .article_cours>article{
-    margin-inline-end: 20px;
+    margin-inline-end: 10px;
+    margin-block-end: 30px;
 }
 
 .article_cours_entete {
