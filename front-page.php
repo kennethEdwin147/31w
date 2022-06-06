@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+<h1>Front-page</h1>
 <h2 class='article_cours_entete'>Explorez les cours de la technique en intégration multimédia:</h2>
 
 <?php if( have_posts() ) : ?>
@@ -8,6 +10,11 @@
         <header>
           <p><?= the_title(); ?></p>
         </header>
+        <p><?= wp_trim_words(get_the_content(), 30) ?></p>
+        <?php 
+         $lien = "<a href=' ". get_permalink(). " '>". substr(get_the_title(),0,8) ."</a>"; 
+         echo $lien;
+        ?>
       </article>
    <?php endwhile;?>
    </section>
