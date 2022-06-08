@@ -4,11 +4,11 @@
     font-family: $font__main;
     padding: 15px;
     min-height: 400px;
-    border: 3px solid $color__article_secondaire;
+    border: 2px solid $color__article_secondaire;
 }
 
 .article_cours:nth-of-type(odd){
-    border:3px solid blueviolet;
+    border:2px solid blueviolet;
 }
 
 .article_cours__titre {
