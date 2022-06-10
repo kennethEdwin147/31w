@@ -7,8 +7,8 @@
     border: 2px solid $color__article_secondaire;
 }
 
-.article_cours:nth-of-type(odd){
-    border:2px solid blueviolet;
+.article_cours:nth-of-type(3n){
+    background-color: honeydew;
 }
 
 .article_cours__titre {
@@ -25,12 +25,13 @@
 }
 
 .article_cours__bouton {
+    position: absolute;
+    bottom: 10%;
+
     display: inline-block;
     text-decoration: none;
     margin-top: 10px;
     padding: 5px 10px;
-    bottom: 10%;
-    position: absolute;
 }
 
 /* --article_section------ */
@@ -44,8 +45,20 @@
     margin-left: auto;
     margin-right: auto;
 
-    column-gap: 10px;
-    row-gap: 10px;
-
+    column-gap: 1px;
+    row-gap: 1px;
 }
 
+* + .article_section {
+    margin-top: 75px;
+}
+
+/* article_cours_entete */
+
+.article_cours_entete {
+    font-size: 1.5rem;
+    max-width: $max__width_section;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -19,13 +19,15 @@
     <section class='site'>
         <header class='site__header'>
             <section class='site__branding'>
-                <h1>
-                    <a href="<?= esc_url( home_url( '/' ) ); ?>"> <?= bloginfo( 'name' );?></a>
-                </h1>
-                <h2><?= bloginfo( 'description' );?></h2>
+                <div class='site__description'>
+                    <h2>
+                        <a href="<?= esc_url( home_url( '/' ) ); ?>"> <?= bloginfo( 'name' );?></a>
+                    </h2>
+                    <h2><?= bloginfo( 'description' );?></h2>
+                </div>
             </section>
             <nav class='site__navigation'>
-                Menu
+                <h2>Explorez le Menu</h2>
             </nav>
         </header>
  
