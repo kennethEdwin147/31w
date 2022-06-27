@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- index.php -->
 
 <header class='site__header'>
   <h2>Front-page</h2>
