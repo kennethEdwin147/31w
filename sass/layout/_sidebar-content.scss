@@ -7,9 +7,17 @@
 		"footer footer";
 }
 
+
+.site__header,
+.site__main,
+.site__footer,
+.site__sidebar {
+	padding: 1vh 1vw;
+}
+
 .site__header {
 	grid-area: header;
-	background-color: rgb(29, 121, 196);
+	background-color: indianred;
 }
 
 .site__main {
@@ -17,14 +25,14 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__sidebar {
+.site__sidebar {
 	grid-area: sidebar;
-	background-color: rgb(163, 148, 14);
+	background-color: rgb(255, 255, 255);
 }
 
 .site__footer {
 	grid-area: footer;
-	background-color: rgb(38, 38, 134);
+	background-color: lavender;
 }
 
 /* @import "no-sidebar"; */
