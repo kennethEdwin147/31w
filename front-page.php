@@ -1,7 +1,7 @@
 <?php get_header(); ?> <!-- front-page.php -->
 
 <header class='site__header'>
-  <h2>Front-page.php</h2> <!-- À enlever -->
+  <h2>Bienvenue à la page d'accueil</h2> <!-- À enlever -->
 </header>
 
 <?php if( have_posts() ) : ?>
