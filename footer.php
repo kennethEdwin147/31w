@@ -2,6 +2,6 @@
         Le pied de page
         </footer>
     <?php wp_footer(); ?>
-    </section> <!-- fin du site wp -->
+    </section> <!-- fin d enotre site wordpress -->
 </body>
 </html>
