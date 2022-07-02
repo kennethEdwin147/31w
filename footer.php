@@ -1,7 +1,7 @@
-        <footer class="site_footer">
-        Le pied de page
-        </footer>
-    <?php wp_footer(); ?>
-    </section> <!-- fin d enotre site wordpress -->
+<footer class="site__footer">
+Le pied de page
+</footer>
+<?php wp_footer(); ?>
+</section> <!-- fin .site -->
 </body>
 </html>
