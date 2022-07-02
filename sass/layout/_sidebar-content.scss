@@ -1,38 +1,91 @@
-.site {
-	display: grid;
-	grid-template-columns: ($size__site-sidebar) auto;
-	grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
-}
+.site__main {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
 
-
-.site__header,
-.site__main,
-.site__footer,
-.site__sidebar {
-	padding: 1vh 1vw;
-}
-
-.site__header {
-	grid-area: header;
-	background-color: indianred;
+	min-height: 100vh;
+	position: relative;
 }
 
 .site__main {
-	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	column-gap: 20px;
+}
+
+@media screen and (min-width:776px) {
+	.site__main {
+		flex-direction: row;
+	}
+	.site__sidebar {
+		min-width:350px;
+		max-width: 21.5vw;
+	}
+}
+
+.site__sidebar img {
+	object-fit: cover;
+}
+
+.site__main,
+.site__footer,
+.site__sidebar {
+	padding: 1.5vh 1.5vw;
+}
+
+
+.site__header {
+	background-color: white;
+}
+
+.site__main {
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.site__sidebar {
-	grid-area: sidebar;
-	background-color: rgb(255, 255, 255);
-}
-
 .site__footer {
-	grid-area: footer;
-	background-color: lavender;
+	background-color: black;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
-/* @import "no-sidebar"; */
+.site__banner {
+	position:relative;
+	background-image: url('http://localhost:8080/31w-ken/wp-content/uploads/2022/07/bg_header.png');
+	background-position: center;
+	margin-top: 20px;
+}
+
+.site__banner__img {
+	position: relative;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('http://localhost:8080/31w-ken/wp-content/uploads/2022/07/COM-I-1709-01a_banniere-accueuil-web.jpg');
+	min-height: 20vh;
+}
+
+.site__banner__img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 2;
+	background-color:rgba(4, 1, 15, 0.13)
+}
+
+.menu__header {
+	padding: 3vh 1.5vw;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
