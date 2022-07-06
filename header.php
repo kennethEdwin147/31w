@@ -16,16 +16,20 @@
 </head>
 <body>
     <section class="site">
-        <header class="site__header">
-            <section class="site__branding">
-                titre du site
-            </section>
-            <nav class="site__navigation">
-            Menu
-            </nav>
-        </header>
-        <section class="site__sidebar">
-            <h3>Sidebar</h3>
+    <header class='site__header'>
+        <section class="menu__header">
+            <img src="http://localhost:8080/31w-ken/wp-content/uploads/2022/07/logo_college_maisonneuve-1.png" alt="" srcset="">
+
         </section>
+        <section class="menu__decoration">
+
+        </section>
+    </header>
+    <section class="site__banner">
+        <section class="site__banner__img"></section>
+
+    </section>
+
+  
     
 
