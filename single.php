@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <header class='site__header'>
-  <h2>single.php</h2>
 </header>
 
 <section class="site__main">

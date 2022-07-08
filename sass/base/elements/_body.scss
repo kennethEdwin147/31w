@@ -1,4 +1,8 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
-	min-height: 100vh;
+	min-height: 120vh;
+}
+
+a {
+	text-decoration: none;
 }

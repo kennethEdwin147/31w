@@ -1,5 +1,7 @@
 <footer class="site__footer">
-Le pied de page
+    <div class="footer_menu">
+       <a href="">kenneth Edwin Gbeti</a>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 </section> <!-- fin .site -->
