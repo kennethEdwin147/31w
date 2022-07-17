@@ -18,6 +18,15 @@
     <section class="site">
     <header class='site__header'>
         <section class="menu__header">
+            <div class="menu__header_nav">
+            <?php wp_nav_menu(array(
+                            'menu' => '',
+                            'container' => 'nav',
+                            'container_class' => 'menu__sidebar',
+                            'menu_class' => 'menu__sidebar__ul'
+            )) ?>
+            </div>
+      
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="http://eddym91.sg-host.com/wp-content/uploads/2022/07/logo_college_maisonneuve-1.png">
             </a>

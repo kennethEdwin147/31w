@@ -3,6 +3,7 @@
 
 <section class="site__main">
         <section class="site__sidebar">
+          
             <img class="article_image" src="http://eddym91.sg-host.com/wp-content/uploads/2022/07/FJ5f7ZHXMAAgzMh.jpg">
         </section>
     <section class='site__article'>
@@ -23,21 +24,18 @@
    </section>
 </section>
 
-<section class="site__main">
+<section class='section_article_cours'>
 <?php if( have_posts() ) : ?>
-    <section class='site__article'>
     <?php while( have_posts() ) : the_post(); ?>
-    <?php break;?>
-      <article class="article_cours">
-          <h3 class='article_cours__titre'><?= the_title(); ?></h3>
-          <p class='article_cours__texte'><?= wp_trim_words(get_the_content(), 25) ?></p>
+      <article class="liste_cours">
+          <h3 class='liste_cours__titre'><?= the_title(); ?></h3>
+          <p class='liste_cours__texte'><?= wp_trim_words(get_the_content(), 10) ?></p>
         <?php 
          $lien = "<a class='article_cours__bouton' href=' ". get_permalink(). " '>". substr(get_the_title(),0,8) ."</a>"; 
          echo $lien;
         ?>
        </article>
    <?php endwhile;?>
-   </section>
 <?php endif; ?>
 </section>
 
